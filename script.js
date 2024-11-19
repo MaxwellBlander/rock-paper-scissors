@@ -14,14 +14,21 @@ function getComputerChoice() {
 
 }
 
+function getHumanChoice() {
+    let humanChoice = prompt('enter choice: rock paper or scissors?')
+    return humanChoice
+    console.log(humanChoice)
+}
 
-// Psuedocode for computer choice
+
+// Psuedocode for computer choice 
 // 1 write function with Math.random to return number
 // 2 use if statements to give choice based off result
 // 3 return choice
 // 4
-// 5
-// 6
-// 7
-// 8
-// 9
+
+// // Psuedo code for human choice
+// 1 create function for choice
+// 2 function logic provide prompt for user asking for choices
+// 3 return user choice
+// 4
