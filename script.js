@@ -33,53 +33,56 @@ function getComputerChoice() {
    
            if (( humanChoice === 'rock' && cpuChoice === 'paper')) {
             //    console.log("Winner is computer")
-            div.textContent = "Winner is computer";
                cpuScore++; 
+               div.textContent = `Winner computer! Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            } else if (( humanChoice === 'rock' && cpuChoice === 'scissors')) {
             //    console.log("Winner is human!")
-            div.textContent = "Winner is human";
                humanScore++;
+               div.textContent = `Winner human! Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            } else if (( humanChoice === 'rock' && cpuChoice === 'rock')) {
             //    console.log("Draw! Shoot again!")
-            div.textContent = "Draw! Shoot again!";
+            div.textContent = `Draw! Shoot again Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            } else if (( humanChoice === 'paper' && cpuChoice ==='rock')) {
             //    console.log("Winner is Human!")
-            div.textContent = "Winner is human";
                humanScore++;
+               div.textContent = `Winner human! Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            } else if (( humanChoice === 'paper' && cpuChoice === 'scissors')) {
             //    console.log("Winner is computer")
-            div.textContent = "Winner is computer";
                cpuScore++;
+               div.textContent = `Winner computer! Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            } else if (( humanChoice === 'paper' && cpuChoice === "paper")) {
             //    console.log("Draw! Shoot again!")
-            div.textContent = "Draw! Shoot again!";
+            div.textContent = `Draw! Shoot again Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            } else if (( humanChoice === 'scissors' && cpuChoice === 'rock')) {
             //    console.log("Winner is computer")
-            div.textContent = "Winner is computer";
                cpuScore++;
+               div.textContent = `Winner computer! Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            } else if (( humanChoice === 'scissors' && cpuChoice === 'paper')) {
             //    console.log("Winner is human!")
-            div.textContent = "Winner is human";
                humanScore++;
+               div.textContent = `Winner human! Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            } else if (( humanChoice === 'scissors' && cpuChoice === 'scissors'))
             //    console.log("Draw! Shoot again!")
-            div.textContent = "Draw! Shoot again!";
+            div.textContent = `Draw! Shoot again Human score is ${humanScore}. Computer score is ${cpuScore}`;  
            }
            
            let humanSelection = getHumanChoice();
            let computerSelection = getComputerChoice();
            
-       let btn = document.querySelector(".btn")
-       btn.addEventListener("click", playRound (e))
+       let btn = document.querySelector(".btn");
+       btn.addEventListener("click", playRound (e));
       
        let div = document.createElement("div");
-       
-
+       body = document.querySelector("body");
+       body.appendChild(div);
 
            playRound(humanSelection, computerSelection);
-       console.log(humanScore)
-       console.log(cpuScore)
+           div.textContent = `Human score is ${humanScore}. Computer score is ${cpuScore}`
+    //    console.log(humanScore)
+    //    console.log(cpuScore)
        
+
+
 //        for (let round = 0; round < 5; round++) {
 //           let cpuChoice = getComputerChoice();
 //            let humanChoice = getHumanChoice();
@@ -87,10 +90,18 @@ function getComputerChoice() {
    
 //    }
    
-   if (humanScore > cpuScore) {
-       console.log("Human wins the game");
-   } else if (cpuScore > humanScore)
-       console.log("Computer wins the game");
+
+if (humanScore = 5) {
+    div.textContent = "Human wins the game";
+} else if (cpuScore = 5) {
+    div.textContent = "Computer wins the game";
+ }
+
+
+//    if (humanScore > cpuScore) {
+//        console.log("Human wins the game");
+//    } else if (cpuScore > humanScore)
+//        console.log("Computer wins the game");
    
    
    playRound(humanSelection, computerSelection);
