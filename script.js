@@ -87,29 +87,29 @@ function getComputerChoice() {
    
    // }
    
-   // if (humanScore > cpuScore) {
-   //     console.log("Human wins the game");
-   // } else if (cpuScore > humanScore)
-   //     console.log("Computer wins the game");
+   if (humanScore > cpuScore) {
+       console.log("Human wins the game");
+   } else if (cpuScore > humanScore)
+       console.log("Computer wins the game");
    
    
-//    playRound(humanSelection, computerSelection);
+   playRound(humanSelection, computerSelection);
    
-//    humanSelection = getHumanChoice();
-//    computerSelection = getComputerChoice();
-//    playRound(humanSelection, computerSelection);
+   humanSelection = getHumanChoice();
+   computerSelection = getComputerChoice();
+   playRound(humanSelection, computerSelection);
    
-//    humanSelection = getHumanChoice();
-//    computerSelection = getComputerChoice();
-//    playRound(humanSelection, computerSelection);
+   humanSelection = getHumanChoice();
+   computerSelection = getComputerChoice();
+   playRound(humanSelection, computerSelection);
    
-//    humanSelection = getHumanChoice();
-//    computerSelection = getComputerChoice();
-//    playRound(humanSelection, computerSelection);
+   humanSelection = getHumanChoice();
+   computerSelection = getComputerChoice();
+   playRound(humanSelection, computerSelection);
    
-//    humanSelection = getHumanChoice();
-//    computerSelection = getComputerChoice();
-//    playRound(humanSelection, computerSelection);
+   humanSelection = getHumanChoice();
+   computerSelection = getComputerChoice();
+   playRound(humanSelection, computerSelection);
    
    if (humanScore > cpuScore){
        console.log(`You win!\nYour score: ${humanScore}\nComputer score: ${cpuScore}`)
